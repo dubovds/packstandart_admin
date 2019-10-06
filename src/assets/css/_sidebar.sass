@@ -1,0 +1,82 @@
+.sidebar
+  &__header
+    position: fixed
+    width: 224px
+    background-color: $brown-light
+    padding: 10px
+
+  &__logo
+    width: 106px
+    height: 63px
+    background-image: url(../images/Logo.png) 
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: contain
+    margin: auto
+
+  &__content
+    position: fixed
+    width: 224px
+    padding: 110px 0 25px
+
+  &__list
+    padding: 0
+    margin: 0
+    list-style-type: none
+
+  &__link
+    position: relative
+    display: block
+    padding: 15px 5px 15px 62px
+    color: $white
+    text-decoration: none
+    @include transition
+
+    &:hover
+      background-color: $brown-dark 
+
+    &:before
+      content: ''
+      position: absolute
+      left: 25px
+      width: 22px
+      height: 18px 
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: contain
+
+    &_order
+      &:before
+        background-image: url(../images/icon-orders.png)
+
+    &_cards
+      &:before
+        background-image: url(../images/icon-cards.png)
+
+    &_users
+      &:before
+        background-image: url(../images/icon-users.png)
+
+    &_entities
+      &:before
+        background-image: url(../images/icon-entities.png)
+
+    &_abc
+      &:before
+        background-image: url(../images/icon-abc.png)
+
+    &_news
+      &:before
+        background-image: url(../images/icon-news.png)
+
+    &_text
+      &:before
+        background-image: url(../images/icon-text.png)
+
+.sidebar-back
+  position: fixed
+  width: 224px
+  top: 0
+  bottom: -120px
+  background: $brown
+  z-index: -1

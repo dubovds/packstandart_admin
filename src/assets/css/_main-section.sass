@@ -1,0 +1,52 @@
+.main-section
+  position: relative
+  margin-top: 83px
+  padding: 40px 0
+
+  &__item
+    position: relative
+    display: flex
+    justify-content: space-between
+    background-color: $white
+    margin-top: 30px
+    padding: 25px 15px 25px 100px
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1)
+
+    &:before
+      content: ''
+      position: absolute
+      background-image: url(../images/order-image.png) 
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      background-size: contain
+      width: 64px
+      height: 64px
+      top: 50%
+      left: 25px
+      transform: translateY(-50%)
+
+.ms-item
+  &__title
+    font-weight: bold
+    margin-bottom: 10px
+
+    &_big
+      font-size: 20px
+      margin-bottom: 5px
+
+  &__col
+    padding-right: 10px
+    &_estimate
+      width: 16%
+
+    &_quantity
+      width: 16%
+
+    &_order-number
+      width: 20%
+
+    &_name
+      width: 31%
+
+    &_status
+      width: 16%

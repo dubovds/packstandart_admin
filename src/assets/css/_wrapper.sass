@@ -1,0 +1,23 @@
+#wrapper-main
+  display: flex
+  position: relative
+
+#wrapper-sidebar
+  position: relative
+  width: 224px
+  background-color: $brown
+
+#wrapper-content
+  position: relative
+  width: calc(100% - 224px)
+  background-color: $grey
+  padding: 0 45px
+
+.wrapper-content-back
+  position: fixed
+  width: 100%
+  top: 0
+  bottom: -120px
+  background: $grey
+  margin-left: -45px
+  z-index: -1
